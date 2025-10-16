@@ -1,0 +1,39 @@
+{
+  "name": "renewable-energy-trading",
+  "version": "1.0.0",
+  "description": "Tokenised renewable energy trading platform on Stacks blockchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . --ext .js,.ts",
+    "typecheck": "tsc --noEmit",
+    "clarinet:check": "clarinet check",
+    "clarinet:test": "clarinet test",
+    "dev": "clarinet console"
+  },
+  "keywords": [
+    "stacks",
+    "blockchain",
+    "renewable-energy",
+    "smart-contracts",
+    "clarinet"
+  ],
+  "author": "adrianscott9447@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@hirosystems/clarinet-sdk": "^2.0.0",
+    "@stacks/transactions": "^6.13.0",
+    "@types/node": "^20.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "dependencies": {
+    "@stacks/network": "^6.13.0",
+    "@stacks/stacks-blockchain-api-types": "^6.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+[project]
+name = "renewable-energy-trading"
+authors = ["adrianscott9447@gmail.com"]
+description = "Tokenised renewable energy trading platform on Stacks blockchain"
+telemetry = false
+cache_dir = "./.clarinet"
+
+[contracts.energy-trading]
+path = "contracts/energy-trading.clar"
+
+[contracts.energy-certificates]
+path = "contracts/energy-certificates.clar"
+
+[repl]
+costs_version = 3
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
