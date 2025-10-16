@@ -14,6 +14,8 @@ jobs:
           cache: 'npm'
       - name: "Install dependencies"
         run: npm install
+      - name: "Fix vitest permissions"
+        run: chmod +x node_modules/.bin/vitest
       - name: "Run tests"
         run: npm test
       - name: "Check contract syntax"
