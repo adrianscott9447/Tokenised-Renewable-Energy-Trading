@@ -5,14 +5,21 @@ description = "Tokenised renewable energy trading platform on Stacks blockchain"
 telemetry = false
 cache_dir = "./.clarinet"
 
+[project.boot_accounts]
+deployer = { mnemonic = "twice kind fence tip hidden tilt action fragile skin nothing glory cousin green tomorrow spring wrist shed math olympic multiply hip blue scout claw", balance = 100000000 }
+wallet_1 = { mnemonic = "sell invite acquire kitten bamboo drastic jelly vivid peace spawn twice guilt pave pen trash pretty park cube fragile unaware remain midnight betray rebuild", balance = 100000000 }
+wallet_2 = { mnemonic = "hold excess usual excess ring elephant install account glad dry fragile donkey gaze humble truck breeze nation gasp vacuum limb head keep delay hospital", balance = 100000000 }
+
 [contracts.energy-trading]
 path = "contracts/energy-trading.clar"
+depends_on = []
 
 [contracts.energy-certificates]
 path = "contracts/energy-certificates.clar"
+depends_on = []
 
 [repl]
-costs_version = 3
+costs_version = 2
 parser_version = 2
 
 [repl.analysis]
