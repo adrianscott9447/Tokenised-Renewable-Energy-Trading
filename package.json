@@ -4,10 +4,10 @@
   "description": "Tokenised renewable energy trading platform on Stacks blockchain",
   "main": "index.js",
   "scripts": {
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "lint": "eslint . --ext .js,.ts",
-    "typecheck": "tsc --noEmit",
+    "test": "npx vitest run",
+    "test:watch": "npx vitest",
+    "lint": "npx eslint . --ext .js,.ts",
+    "typecheck": "npx tsc --noEmit",
     "clarinet:check": "clarinet check",
     "clarinet:test": "clarinet test",
     "dev": "clarinet console"
