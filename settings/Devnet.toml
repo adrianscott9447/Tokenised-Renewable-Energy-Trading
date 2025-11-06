@@ -1,23 +1,18 @@
 [network]
 name = "devnet"
-node_rpc_address = "http://localhost:20443"
 deployment_fee_rate = 10
 
-[[network.accounts]]
-name = "deployer"
-address = "ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM"
-balance = 1000000000
+[accounts.deployer]
+mnemonic = "twice kind fence tip hidden tilt action fragile skin nothing glory cousin green tomorrow spring wrist shed math olympic multiply hip blue scout claw"
+balance = 100_000_000_000_000
+sbtc_balance = 1_000_000_000
 
-[[network.accounts]]
-name = "wallet_1"
-address = "ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5"
-balance = 1000000000
+[accounts.wallet_1]
+mnemonic = "sell invite acquire kitten bamboo drastic jelly vivid peace spawn twice guilt pave pen trash pretty park cube fragile unaware remain midnight betray rebuild"
+balance = 100_000_000_000_000
+sbtc_balance = 1_000_000_000
 
-[[network.accounts]]
-name = "wallet_2" 
-address = "ST2CY5V39NHDPWSXMW9QDT3HC3GD6Q6XX4CFRK9AG"
-balance = 1000000000
-
-[repl.analysis.passes.check_checker]
-trusted_sender = false
-trusted_caller = false
+[accounts.wallet_2]
+mnemonic = "hold excess usual excess ring elephant install account glad dry fragile donkey gaze humble truck breeze nation gasp vacuum limb head keep delay hospital"
+balance = 100_000_000_000_000
+sbtc_balance = 1_000_000_000
